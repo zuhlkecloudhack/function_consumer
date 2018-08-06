@@ -7,6 +7,6 @@ steps:
       '--source=/workspace/.',
       '--region=${_REGION}',
       '--runtime=python37',
-      '--trigger-event google.pubsub.topic.publish',
-      '--trigger-resource ${_TRIGGER_RESOURCE}'
+      '--trigger-event=google.pubsub.topic.publish',
+      '--trigger-resource=${_TRIGGER_RESOURCE}'
   ]
