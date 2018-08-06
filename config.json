@@ -1,0 +1,7 @@
+{
+  "PROJECT": "zuhlkecloudhack",
+  "PUBSUB_TOPIC": "flight_messages_response",
+  "BUCKET": "flight_messages",
+  "DATASET": "cloudhack",
+  "TABLE": "flight_messages"
+}
