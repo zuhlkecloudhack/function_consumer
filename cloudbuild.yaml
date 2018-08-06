@@ -1,0 +1,12 @@
+steps:
+- name: gcr.io/cloud-builders/gcloud
+  args: [
+      'beta',
+      'functions',
+      'deploy','${_ENTRYPOINT}',
+      '--source=/workspace/.',
+      '--region=${_REGION}',
+      '--runtime=python37',
+      '--trigger-event google.pubsub.topic.publish',
+      '--trigger-resource ${_TRIGGER_RESOURCE}'
+  ]
