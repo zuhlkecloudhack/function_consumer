@@ -35,8 +35,8 @@ def consume_flight_message(data, context):
         payload = base64.b64decode(data['data']).decode('utf-8')
 
         row = json.loads(payload)
-        event_dt = datetime.datetime.strptime(row["timestamp"][:-5], '%Y-%m-%dT%H:%M:%S')
-        row["timestamp"] = time.mktime(event_dt.timetuple())
+        # event_dt = datetime.datetime.strptime(row["timestamp"][:-5], '%Y-%m-%dT%H:%M:%S')
+        # row["timestamp"] = time.mktime(event_dt.timetuple())
         row["no-of-words"] = len(row["message"].split(" "))
 
         logging.info(row)
