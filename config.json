@@ -1,7 +1,7 @@
 {
-  "PROJECT": "zuhlkecloudhack",
+  "PROJECT": "cloud-hackathon-zeus",
   "PUBSUB_TOPIC": "flight_messages_response",
-  "BUCKET": "flight_messages",
+  "BUCKET": "zeus_flight_messages",
   "DATASET": "cloudhack",
   "TABLE": "flight_messages"
 }
